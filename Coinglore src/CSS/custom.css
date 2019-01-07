@@ -1,3 +1,12 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    padding-top: 8%;
+}
 
 #logo-custom:hover {
     transform: translateY(-2px);
@@ -6,6 +15,11 @@
 
 #logo-custom {
     transition: .3s all;
+}
+
+.img-fluid {
+  -webkit-filter: drop-shadow(4px 4px 4px #222);
+  filter: drop-shadow(4px 4px 4px #222);
 }
 
 .nav-shadow {
@@ -25,12 +39,6 @@
     text-decoration-line: 2px; */
 }
 
-.head {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: .2rem;
-    font-weight: 500;
-}
 
 .jumbo-placement {
     margin-top: 0px;
@@ -59,18 +67,15 @@
     text-decoration: none;
 }
 
-.coinUnit {
-
-}
 
 .coin-heading {
     text-align: center;
     text-decoration: inherit;
     /* Not the best way to do this. Can see when highlighted. */
     color: transparent;
-    font-family: 'Titillium Web', sans-serif;
     font-size: 1rem;
-    letter-spacing: .1rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
     margin-bottom: 0;
 }
 
@@ -98,5 +103,50 @@ div a:hover h5{
     animation-duration: 2s;
 }
 
+a:-webkit-any-link {
+    text-decoration: none;
+}
 
+.searchField {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+}
 
+@media screen and (max-width: 992px) {
+    .coin-heading {
+        font-size: 0.6rem;
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .searchField {
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .coin-heading {
+        color: black;
+        margin-bottom: 5%;
+    }
+}
+
+input.form-control {
+    background-color: #F7F6F6;
+}
+
+.form-control {
+    border-radius: 7rem;
+}
+
+#logo {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom:3%;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
